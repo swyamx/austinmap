@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Places to Visit in Austin</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLFXCbECjs78AlO0bFxIaqCt_WAPk5x9w"></script> 
+</head>
+<body>
+    <header>
+        <h1>Best Places to Visit in Austin, Texas</h1>
+    </header>
+    <main>
+        <div id="map"></div>
+        <div id="places">
+            <section class="place">
+                <h2>Zilker Park</h2>
+                <p>A beautiful park with trails, gardens, and a swimming area.</p>
+                <p><strong>Address:</strong> 2207 Lou Neff Rd, Austin, TX 78746</p>
+                <p><strong>Phone:</strong> (512) 974-6700</p>
+                <p><strong>Website:</strong> <a href="https://austintexas.gov/department/zilker-metropolitan-park" target="_blank">Visit Zilker Park</a></p>
+                <p><strong>Opening Hours:</strong> 5 AM - 10 PM</p>
+                <p><strong>Rating:</strong> ★★★★☆ (4.5/5)</p>
+                <button onclick="zoomToPlace({ lat: 30.2672, lng: -97.7750 })">Show on Map</button>
+            </section>
+            <section class="place">
+                <h2>Texas State Capitol</h2>
+                <p>A historic building with stunning architecture and guided tours.</p>
+                <p><strong>Address:</strong> 1100 Congress Ave, Austin, TX 78701</p>
+                <p><strong>Phone:</strong> (512) 463-0063</p>
+                <p><strong>Website:</strong> <a href="https://tspb.state.tx.us" target="_blank">Visit Texas State Capitol</a></p>
+                <p><strong>Opening Hours:</strong> 7 AM - 10 PM</p>
+                <p><strong>Rating:</strong> ★★★★★ (4.8/5)</p>
+                <button onclick="zoomToPlace({ lat: 30.2747, lng: -97.7404 })">Show on Map</button>
+            </section>
+            <section class="place">
+                <h2>Lady Bird Lake</h2>
+                <p>A scenic reservoir on the Colorado River, perfect for kayaking and hiking.</p>
+                <p><strong>Address:</strong> Austin, TX 78701</p>
+                <p><strong>Phone:</strong> N/A</p>
+                <p><strong>Website:</strong> <a href="https://www.austintexas.gov/department/lady-bird-lake" target="_blank">Visit Lady Bird Lake</a></p>
+                <p><strong>Opening Hours:</strong> Open 24 hours</p>
+                <p><strong>Rating:</strong> ★★★★★ (4.7/5)</p>
+                <button onclick="zoomToPlace({ lat: 30.2602, lng: -97.7490 })">Show on Map</button>
+            </section>
+            <section class="place">
+                <h2>Mount Bonnell</h2>
+                <p>A popular viewpoint offering stunning views of the city and the Colorado River.</p>
+                <p><strong>Address:</strong> 3800 Mount Bonnell Rd, Austin, TX 78731</p>
+                <p><strong>Phone:</strong> N/A</p>
+                <p><strong>Website:</strong> <a href="https://www.austintexas.gov/department/mount-bonnell" target="_blank">Visit Mount Bonnell</a></p>
+                <p><strong>Opening Hours:</strong> 5 AM - 10 PM</p>
+                <p><strong>Rating:</strong> ★★★★☆ (4.6/5)</p>
+                <button onclick="zoomToPlace({ lat: 30.3033, lng: -97.7690 })">Show on Map</button>
+            </section>
+            <section class="place">
+                <h2>South Congress Avenue</h2>
+                <p>A vibrant area known for its shops, restaurants, and iconic views of the Capitol.</p>
+                <p><strong>Address:</strong> South Congress Ave, Austin, TX 78704</p>
+                <p><strong>Phone:</strong> N/A</p>
+                <p><strong>Website:</strong> <a href="https://www.southcongressavenue.com" target="_blank">Visit South Congress Avenue</a></p>
+                <p><strong>Opening Hours:</strong> Varies by business</p>
+                <p><strong>Rating:</strong> ★★★★☆ (4.5/5)</p>
+                <button onclick="zoomToPlace({ lat: 30.2500, lng: -97.7490 })">Show on Map</button>
+            </section>
+            <section class="place">
+                <h2>Blanton Museum of Art</h2>
+                <p>Home to a comprehensive collection of European, American, and Latin American art.</p>
+                <p><strong>Address:</strong> 200 E Martin Luther King Jr Blvd, Austin, TX 78712</p>
+                <p><strong>Phone:</strong> (512) 471-5482</p>
+                <p><strong>Website:</strong> <a href="https://blantonmuseum.org" target="_blank">Visit Blanton Museum</a></p>
+                <p><strong>Opening Hours:</strong> 10 AM - 5 PM</p>
+                <p><strong>Rating:</strong> ★★★★☆ (4.6/5)</p>
+                <button onclick="zoomToPlace({ lat: 30.2849, lng: -97.7270 })">Show on Map</button>
+            </section>
+            <section class="place">
+                <h2>LBJ Presidential Library</h2>
+                <p>A library and museum dedicated to the legacy of President Lyndon B. Johnson.</p>
+                <p><strong>Address:</strong> 2313 Red River St, Austin, TX 78705</p>
+                <p><strong>Phone:</strong> (512) 721-0200</p>
+                <p><strong>Website:</strong> <a href="https://www.lbjlibrary.org" target="_blank">Visit LBJ Library</a></p>
+                <p><strong>Opening Hours:</strong> 9 AM - 5 PM</p>
+                <p><strong>Rating:</strong> ★★★★☆ (4.5/5)</p>
+                <button onclick="zoomToPlace({ lat: 30.2840, lng: -97.7240 })">Show on Map</button>
+            </section>
+            <section class="place">
+                <h2>Texas Memorial Museum</h2>
+                <p>A natural history museum featuring exhibits on Texas' natural history and culture.</p>
+                <p><strong>Address:</strong> 2400 Trinity St, Austin, TX 78712</p>
+                <p><strong>Phone:</strong> (512) 471-1604</p>
+                <p><strong>Website:</strong> <a href="https://www.texasmemory.org" target="_blank">Visit Texas Memorial Museum</a></p>
+                <p><strong>Opening Hours:</strong> 9 AM - 5 PM</p>
+                <p><strong>Rating:</strong> ★★★★☆ (4.4/5)</p>
+                <button onclick="zoomToPlace({ lat: 30.2845, lng: -97.7310 })">Show on Map</button>
+            </section>
+            <section class="place">
+                <h2>McKinney Falls State Park</h2>
+                <p>A beautiful state park with hiking trails, waterfalls, and camping facilities.</p>
+                <p><strong>Address:</strong> 5808 McKinney Falls Pkwy, Austin, TX 78744</p>
+                <p><strong>Phone:</strong> (512) 389-8900</p>
+                <p><strong>Website:</strong> <a href="https://texasstateparks.reserveamerica.com/camping/mckinney-falls" target="_blank">Visit McKinney Falls State Park</a></p>
+                <p><strong>Opening Hours:</strong> 8 AM - 10 PM</p>
+                <p><strong>Rating:</strong> ★★★★☆ (4.6/5)</p>
+                <button onclick="zoomToPlace({ lat: 30.2050, lng: -97.7060 })">Show on Map</button>
+            </section>
+            <section class="place">
+                <h2>UMLAUF Sculpture Garden & Museum</h2>
+                <p>A beautiful garden featuring the works of American sculptor Charles Umlauf.</p>
+                <p><strong>Address:</strong> 605 Azie Morton Rd, Austin, TX 78704</p>
+                <p><strong>Phone:</strong> (512) 448-0322</p>
+                <p><strong>Website:</strong> <a href="https://www.umlaufsculpture.org" target="_blank">Visit UMLAUF Sculpture Garden</a></p>
+                <p><strong>Opening Hours:</strong> 10 AM - 4 PM</p>
+                <p><strong>Rating:</strong> ★★★★☆ (4.5/5)</p>
+                <button onclick="zoomToPlace({ lat: 30.2600, lng: -97.7720 })">Show on Map</button>
+            </section>
+            <section class="place">
+                <h2>Austin Bats</h2>
+                <p>Watch the largest urban bat colony emerge from under the Congress Avenue Bridge.</p>
+                <p><strong>Address:</strong> 100 Congress Ave, Austin, TX 78701</p>
+                <p><strong>Phone:</strong> N/A</p>
+                <p><strong>Website:</strong> <a href="https://www.austinbatwatch.com" target="_blank">Visit Austin Bats</a></p>
+                <p><strong>Opening Hours:</strong> Best viewed at dusk</p>
+                <p><strong>Rating:</strong> ★★★★☆ (4.7/5)</p>
+                <button onclick="zoomToPlace({ lat: 30.2500, lng: -97.7490 })">Show on Map</button>
+            </section>
+            <section class="place">
+                <h2>Blanton Museum of Art</h2>
+                <p>Home to a comprehensive collection of European, American, and Latin American art.</p>
+                <p><strong>Address:</strong> 200 E Martin Luther King Jr Blvd, Austin, TX 78712</p>
+                <p><strong>Phone:</strong> (512) 471-5482</p>
+                <p><strong>Website:</strong> <a href="https://blantonmuseum.org" target="_blank">Visit Blanton Museum</a></p>
+                <p><strong>Opening Hours:</strong> 10 AM - 5 PM</p>
+                <p><strong>Rating:</strong> ★★★★☆ (4.6/5)</p>
+                <button onclick="zoomToPlace({ lat: 30.2849, lng: -97.7270 })">Show on Map</button>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
